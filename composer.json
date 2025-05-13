@@ -1,0 +1,50 @@
+{
+    "name": "bondarde/live-user-rating",
+    "description": "Collect user rating with Livewire and Filament components",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Bondar",
+            "email": "alexander@bondar.de"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^3.3",
+        "laravel/framework": "^11|^12"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14",
+        "phpunit/phpunit": "^11.5"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": {
+            "BondarDe\\LiveUserRating\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BondarDe\\LiveUserRating\\LiveUserRatingServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
