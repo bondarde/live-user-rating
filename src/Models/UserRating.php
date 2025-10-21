@@ -3,8 +3,8 @@
 namespace BondarDe\LiveUserRating\Models;
 
 use BondarDe\LiveUserRating\Constants\UserRatingType;
-use BondarDe\Lox\Constants\ModelCastTypes;
-use BondarDe\Lox\Traits\GetsUuidOnCreation;
+use BondarDe\DaVinci\Constants\ModelCastTypes;
+use BondarDe\DaVinci\Traits\GetsUuidOnCreation;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;

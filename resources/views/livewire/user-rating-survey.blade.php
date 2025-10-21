@@ -48,20 +48,20 @@
             >
                 {{ __('live-user-feedback::live-user-feedback.feedback_caption') }}:
             </div>
-            <x-lox::form.textarea
+            <x-dv::form.textarea
                 wire:model="feedbackText"
                 name="feedbackText"
                 rows="6"
                 :placeholder="$textareaPlaceholder"
             />
 
-            <x-lox::button
+            <x-dv::button
                 class="mt-4"
                 x-bind:disabled="selectedValue === null"
                 wire:click="storeFeedback"
             >
                 {{ __('live-user-feedback::live-user-feedback.form_cta') }}
-            </x-lox::button>
+            </x-dv::button>
         </div>
     @endif
 
